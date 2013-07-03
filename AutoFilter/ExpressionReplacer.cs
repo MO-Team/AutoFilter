@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace AutoFilter
@@ -73,10 +74,8 @@ namespace AutoFilter
                 return null;
 
             var newList = new List<T>(expressionList.Count);
-            foreach (var exp in expressionList)
-            {
-                newList.Add(ReplaceExpression(exp, expressionToReplace, newExpression));
-            }
+            newList.AddRange(expressionList.Select(exp => ReplaceExpression(exp, expressionToReplace, newExpression)));
+            
             return newList;
         }
 

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace AutoFilter
 {
@@ -13,7 +11,7 @@ namespace AutoFilter
     {
         private const string MessageFormat = @"Filter class '{0}' is missing a mapping for the following properties:{1}
 All properties must be mapped to an entity property or ignored.";
-        private static string PropertySeparator = Environment.NewLine + " ";
+        private static readonly string PropertySeparator = Environment.NewLine + " ";
 
 
         /// <summary>

@@ -216,7 +216,7 @@ namespace AutoFilter
         private Expression CreateNullableComparisionPredicate(ParameterExpression rangeFilterParameter, ParameterExpression entityPropertyParameter, PropertyInfo subPropertyInfo, Type[] rangeFilterGenericArgs, ComparisonType compartionType)
         {
             var filterSubProperty = Expression.Property(rangeFilterParameter, subPropertyInfo);
-            var hasValueProperty = TypeUtils.GetGenericTypeMemberInfo((Nullable<int> n) => n.HasValue, rangeFilterGenericArgs) as PropertyInfo;
+            var hasValueProperty = TypeUtils.GetGenericTypeMemberInfo((int? n) => n.HasValue, rangeFilterGenericArgs) as PropertyInfo;
             var isNullExpression = Expression.Not(Expression.Property(filterSubProperty, hasValueProperty));
 
             var predicate = BuildPredicateExpression(subPropertyInfo.PropertyType, entityPropertyParameter.Type, compartionType);

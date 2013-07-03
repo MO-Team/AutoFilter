@@ -216,10 +216,10 @@ namespace AutoFilter
         /// <summary>
         /// Ignore a filter property and exclude it from the filtering expression
         /// </summary>
-        /// <typeparam name="TFilterProperty"></typeparam>
+        /// <typeparam name="TFilterProperty1"></typeparam>
         /// <param name="filterProperty">The filter property to ignore</param>
         /// <returns></returns>
-        public IFilterDefinition<TFilter, TEntity> Ignore<TFilterProperty>(Expression<Func<TFilter, TFilterProperty>> filterProperty)
+        public IFilterDefinition<TFilter, TEntity> Ignore<TFilterProperty1>(Expression<Func<TFilter, TFilterProperty1>> filterProperty)
         {
             return FilterDefinition.Ignore(filterProperty);
         }

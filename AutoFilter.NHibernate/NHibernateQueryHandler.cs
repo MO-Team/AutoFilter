@@ -44,7 +44,7 @@ namespace AutoFilter.NHibernate
         /// <returns>query provider</returns>
         protected override IQueryProvider GetQueryProvider()
         {
-            return new global::NHibernate.Linq.DefaultQueryProvider((ISessionImplementor)Session);
+            return new DefaultQueryProvider((ISessionImplementor)Session);
         }
 
         /// <summary>

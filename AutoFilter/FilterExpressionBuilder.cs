@@ -115,12 +115,7 @@ namespace AutoFilter
                 }
             }
 
-            if (conditionExpression == null)
-            {
-               conditionExpression = HandleEmptyExpression();
-            }
-
-            return conditionExpression;
+            return conditionExpression ?? HandleEmptyExpression();
         }
 
         /// <summary>
