@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("AutoFilter.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("MT")]
+[assembly: AssemblyCompany("MO")]
 [assembly: AssemblyProduct("AutoFilter.Tests")]
-[assembly: AssemblyCopyright("Copyright © MT 2013")]
+[assembly: AssemblyCopyright("Copyright © MO 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
