@@ -58,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AutoFilter.NHibernate.nuspec" />
     <None Include="AutoFilter.snk" />
     <None Include="packages.config" />
   </ItemGroup>
