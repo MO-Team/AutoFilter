@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFilter", "AutoFilter\AutoFilter.csproj", "{7F353EBD-BD39-463F-BDDF-58C62E98F4CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFilter.Tests", "AutoFilter.Tests\AutoFilter.Tests.csproj", "{4D306CFD-A1FF-4A62-8822-F4104C2A208C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFilter.NHibernate", "AutoFilter.NHibernate\AutoFilter.NHibernate.csproj", "{00DC4F47-3010-4BA4-B271-4DFEE141DE3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestProjects", "TestProjects", "{A977E8A9-E574-4698-8896-078AFD40406A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFilter.NHibernate.Tests", "AutoFilter.NHibernate.Tests\AutoFilter.NHibernate.Tests.csproj", "{6BE04D1C-49F2-40A7-8864-88DCD37CBDF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,8 +27,20 @@ Global
 		{4D306CFD-A1FF-4A62-8822-F4104C2A208C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D306CFD-A1FF-4A62-8822-F4104C2A208C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D306CFD-A1FF-4A62-8822-F4104C2A208C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00DC4F47-3010-4BA4-B271-4DFEE141DE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DC4F47-3010-4BA4-B271-4DFEE141DE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DC4F47-3010-4BA4-B271-4DFEE141DE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DC4F47-3010-4BA4-B271-4DFEE141DE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE04D1C-49F2-40A7-8864-88DCD37CBDF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE04D1C-49F2-40A7-8864-88DCD37CBDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE04D1C-49F2-40A7-8864-88DCD37CBDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE04D1C-49F2-40A7-8864-88DCD37CBDF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D306CFD-A1FF-4A62-8822-F4104C2A208C} = {A977E8A9-E574-4698-8896-078AFD40406A}
+		{6BE04D1C-49F2-40A7-8864-88DCD37CBDF4} = {A977E8A9-E574-4698-8896-078AFD40406A}
 	EndGlobalSection
 EndGlobal

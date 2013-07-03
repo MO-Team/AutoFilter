@@ -1,5 +1,5 @@
+using System;
 using AutoFilter.Interfaces;
-using AutoFilter.Tests.NHibernate;
 
 namespace AutoFilter.Tests
 {
@@ -128,5 +128,14 @@ namespace AutoFilter.Tests
             filterConfiguration.CreateFilter<TestUserFilter, TestUserFilterQuery>();
             TimesPerformed++;
         }
+    }
+
+    public class QueryHandlerTestClass
+    {
+
+        public virtual int IdAtSource { get; set; }
+
+        public virtual string ProductName { get; set; }
+        public virtual DateTime DataInsertionDate { get; set; }
     }
 }

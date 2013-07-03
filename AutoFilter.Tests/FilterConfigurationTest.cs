@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoFilter;
 using NUnit.Framework;
-using AutoFilter.Tests.NHibernate;
 
 namespace AutoFilter.Tests
 {

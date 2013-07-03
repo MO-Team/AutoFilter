@@ -1,11 +1,6 @@
 using System;
 using System.Linq;
-using FluentNHibernate.Cfg;
-using FluentNHibernate.Mapping;
-using AutoFilter;
 using AutoFilter.Interfaces;
-using NHibernate.Linq;
-using NHibernate.Type;
 using NUnit.Framework;
 
 namespace AutoFilter.Tests

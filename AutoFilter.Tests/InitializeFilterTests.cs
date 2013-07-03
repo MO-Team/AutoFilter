@@ -1,10 +1,8 @@
 using System;
 using System.Linq;
-using AutoFilter;
 using AutoFilter.Interfaces;
 using NUnit.Framework;
 using System.Collections.Generic;
-using AutoFilter.Tests.NHibernate;
 
 namespace AutoFilter.Tests
 {

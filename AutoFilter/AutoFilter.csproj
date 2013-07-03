@@ -39,18 +39,9 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>AutoFilter.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>AutoFilter.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FluentNHibernate">
-      <HintPath>..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
-    </Reference>
-    <Reference Include="Iesi.Collections">
-      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="NHibernate">
-      <HintPath>..\packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -92,15 +83,16 @@
     <Compile Include="Interfaces\IRegisterFilter.cs" />
     <Compile Include="Interfaces\IWhenNullPropertyMapConfiguration.cs" />
     <Compile Include="LinqPredicateProvider.cs" />
-    <Compile Include="NHibernate\NHibernateQueryHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RangeFilter.cs" />
     <Compile Include="TypeUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AutoFilter.nuspec" />
-    <None Include="AutoFilter.pfx" />
-    <None Include="packages.config" />
+    <None Include="AutoFilter.snk" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
