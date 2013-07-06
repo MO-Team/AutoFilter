@@ -6,8 +6,9 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <projectUrl></projectUrl>
-    <iconUrl></iconUrl>
+    <projectUrl>https://github.com/MO-Team/AutoFilter</projectUrl>
+    <iconUrl>https://github.com/MO-Team/AutoFilter/blob/master/Icon/filter_icon.png</iconUrl>
+    <licenseUrl>https://github.com/MO-Team/AutoFilter/blob/master/lgpl.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description></description>
     <tags>Autofilter Query Linq ExpressionBuilder Expression</tags>
